@@ -1,0 +1,20 @@
+.banner img {
+  height: 450px;
+  object-fit: contain;
+}
+.banner {
+  color: #fff;
+  background-image: url("https://i.imgur.com/e1hLQ2m.png");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+.banner__content {
+  padding: 30px;
+  padding-top: 150px;
+}
+.banner__content p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
