@@ -1,0 +1,84 @@
+.movie__poster img {
+  width: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.movie__poster {
+  margin-right: 10px;
+  cursor: pointer;
+}
+.movie__poster img {
+  transition: all ease 0.6s;
+  z-index: 9;
+}
+.movie__poster:hover img {
+  transform: scale(1.1);
+}
+.movie__poster:hover .movie__details {
+  display: block;
+  z-index: 9;
+}
+.movie__details {
+  position: absolute;
+  bottom: 20px;
+  width: 200px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 80%);
+  transition: all ease 0.4s;
+  display: none;
+}
+
+.movie__details svg {
+  width: 20px;
+  height: 20px;
+  color: rgb(255, 226, 59);
+}
+.movie__details .movie__desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p.movie__name {
+  font-weight: 600;
+  font-size: 17px;
+  overflow-x: scroll;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movies {
+  flex: 0.7;
+  overflow: hidden;
+}
+.genres {
+  flex: 0.3;
+  text-align: center;
+}
+.movies::-webkit-scrollbar {
+  display: none;
+}
+.genres button {
+  background-color: #d4d4dc;
+  padding: 5px 15px;
+  color: #484c58;
+  border: none;
+  margin: 5px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.movies_right {
+  position: absolute;
+  background: red;
+  width: 100px;
+  height: 100%;
+}

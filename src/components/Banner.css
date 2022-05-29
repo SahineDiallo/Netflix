@@ -4,7 +4,6 @@
 }
 .banner {
   color: #fff;
-  background-image: url("https://i.imgur.com/e1hLQ2m.png");
   background-size: cover;
   background-position: center;
   height: 450px;
@@ -13,8 +12,51 @@
 .banner__content {
   padding: 30px;
   padding-top: 150px;
+  max-width: 450px;
+}
+.banner__content button {
+  padding: 5px 30px;
+  border-radius: 30px;
+  background-color: #feda6a;
+  color: #1d1e22;
+  border: none;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.banner__content button svg {
+  width: 30px;
 }
 .banner__content p {
-  margin-bottom: 10px;
+  margin-bottom: 2px;
   font-size: 13px;
+}
+.movie__title {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.banner__right {
+  position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: linear-gradient(45deg, #393f4d, transparent);
+  z-index: 2;
+  display: inline-block;
+}
+.banner__left {
+  height: 8rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #3c3e44
+  );
 }
